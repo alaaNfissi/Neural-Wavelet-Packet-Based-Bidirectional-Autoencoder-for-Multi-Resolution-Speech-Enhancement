@@ -61,7 +61,10 @@ NWPA integrates:
 ## Abstract
 *Speech enhancement is a critical challenge in signal processing, particularly in noisy environments where preserving intelligibility and perceptual quality is essential. Conventional deep learning-based models operate solely in the time or frequency domain, our approach employs an adaptive multi-resolution framework, enabling superior noise suppression while preserving crucial speech structures across different frequency bands. To this end, we introduce the **Neural Wavelet Packet-Based Bidirectional Autoencoder (NWPA)**, a novel framework for multi-resolution speech enhancement. NWPA leverages the Fast Discrete Wavelet Packet Transform with trainable filters that jointly decompose both approximation and detail sub-bands, capturing richer time-frequency features than traditional fixed-wavelet approaches. A bidirectional autoencoder design reduces parameter overhead by unifying the encoding and decoding stages, while an improved Learnable Asymmetric Hard Thresholding function adaptively suppresses noise in the wavelet domain. Furthermore, a Sparsity-Enforcing Loss Function balances reconstruction fidelity with wavelet sparsity, preserving critical speech components across multiple resolutions. Comprehensive evaluations on the VoiceBank-DEMAND dataset demonstrate NWPA’s state-of-the-art performance, underscoring its effectiveness in both noise reduction and intelligibility preservation. These results highlight NWPA’s potential as a robust and scalable solution for speech enhancement under diverse noise conditions.*
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
+
 
 ## Built With
 
@@ -75,6 +78,8 @@ NWPA integrates:
 - ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 - ![Ray](https://img.shields.io/badge/Ray-%23F70C0C.svg?style=for-the-badge&logo=ray&logoColor=white)
 - ![TensorBoard](https://img.shields.io/badge/TensorBoard-%23007ACC.svg?style=for-the-badge&logo=TensorBoard&logoColor=white)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -90,6 +95,8 @@ Key features:
 
 **Dataset**: Evaluated on the [VoiceBank-DEMAND dataset](https://datashare.ed.ac.uk/handle/10283/2791).  
 **Performance**: Achieves state-of-the-art performance in metrics such as PESQ, STOI, CSIG, CBAK, and COVL.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -123,6 +130,8 @@ Key features:
 
 **Figure 4**. Dynamic evolution of the Learnable Asymmetric Hard Thresholding (LAHT) parameters during training.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Comparison with State-of-the-Art
@@ -142,6 +151,8 @@ Key features:
 | **WEBA (Ours)**     | **4.40** | **4.20** | **4.85** | **0.97** | **3.78** |
 
 **Table 1**. Comparison of NWPA with state-of-the-art models on the VoiceBank-DEMAND dataset.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -166,6 +177,8 @@ Key features:
    pip install -e .
    ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Usage
@@ -182,6 +195,8 @@ Key features:
    ```
 4. **Hyperparameter Grid Search** (optional, using Ray Tune):
    The grid search will run automatically if configured.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -212,6 +227,8 @@ my-wavelet-ae/
     └── test_wavelet_packet_ae.py
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## Contributing
@@ -227,11 +244,15 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)  
 5. Open a Pull Request 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ---
 
 ## License
 
 This project is licensed under the [BSD 3-Clause License](LICENSE.md). You can freely use and modify the code, provided that you give appropriate credit to the original authors. See `LICENSE.md` for the full license text.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -246,3 +267,5 @@ This project is licensed under the [BSD 3-Clause License](LICENSE.md). You can f
 7. [Ku et al., 2023] S4ND U-Net: A multi-dimensional deep structured state space approach to speech enhancement.
 8. [Wang et al., 2024] Mamba-SEUNet: Mamba U-Net for monaural speech enhancement.
 9. [Lu et al., 2023] MP-SENet: A speech enhancement model with parallel denoising of magnitude and phase spectra.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
