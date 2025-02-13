@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div id="readme-top" align="center">
   <a href="https://github.com/alaaNfissi/Neural-Wavelet-Packet-Based-Bidirectional-Autoencoder-for-Multi-Resolution-Speech-Enhancement">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
