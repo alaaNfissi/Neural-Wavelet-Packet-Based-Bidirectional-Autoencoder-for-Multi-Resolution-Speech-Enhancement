@@ -8,7 +8,7 @@
   <h3 align="center">Neural Wavelet Packet-Based Bidirectional Autoencoder for Multi-Resolution Speech Enhancement</h3>
 
   <p align="center">
-    This paper has been submitted for publication in the 38th Canadian Conference on Artificial Intelligence (Canadian AI 2025) .
+    This paper has been accepted for publication in the 38th Canadian Conference on Artificial Intelligence (Canadian AI 2025) .
     <br />
   </p>
 </div>
