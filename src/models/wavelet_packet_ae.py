@@ -168,3 +168,14 @@ class WaveletPacketAutoencoder(nn.Module):
             pad_len = x.size(2) - reconstructed.size(2)
             reconstructed = F.pad(reconstructed, (0, pad_len))
         return reconstructed, detail_list
+
+###############################################################################
+#           Wavelet Packet Sparsity Loss (modified for DWPT)                  #
+###############################################################################
+def wavelet_packet_sparsity_loss(output, target, detail_coeffs, lambda_, gamma_):
+    card_time   = target.numel()
+    recon_error = (output - target).abs().sum() / card_time
+    card_wave   = sum(d.numel() for d in detail_coeffs)
+    wave_sum    = sum(d.abs().sum() for d in detail_coeffs)
+    wave_sum   /= (card_wave + 1e-12)
+    return lambda_ * recon_error + gamma_ * wave_sum

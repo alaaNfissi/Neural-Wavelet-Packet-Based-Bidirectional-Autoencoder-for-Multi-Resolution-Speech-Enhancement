@@ -169,3 +169,49 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Machine Learning specific
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pkl
+*.npy
+*.npz
+*.hdf5
+*.joblib
+
+# TensorBoard logs
+runs/
+logs/
+tensorboard_logs/
+
+# Model checkpoints and outputs
+checkpoints/
+models/saved/
+outputs/
+results/
+
+# Data files (uncomment if you have large data files)
+# data/
+# datasets/
+# raw_data/
+
+# Jupyter notebook checkpoints (already covered but being explicit)
+.ipynb_checkpoints/
+
+# IDE specific (already covered but being explicit)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
